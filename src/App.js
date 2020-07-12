@@ -1,65 +1,35 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Projects from './components/Projects';
+import Articles from './components/Articles';
+import About from './components/About';
+
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <div>
-    <section id="colorlib-hero" className="js-fullheight" data-section="home">
-        <div className="flexslider js-fullheight">
-            <ul className="slides">
-            <li style={{backgroundImage: 'url(images/img_bg_1.jpg)'}}>
-                <div className="overlay" />
-                <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                    <div className="slider-text-inner js-fullheight">
-                        <div className="desc">
-                        <h1>Hi! <br />I'm Jackson</h1>
-                        <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
-                        <p><a className="btn btn-primary btn-learn">Download CV <em className="icon-download4" /></a></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </li>
-            <li style={{backgroundImage: 'url(images/img_bg_2.jpg)'}}>
-                <div className="overlay" />
-                <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                    <div className="slider-text-inner">
-                        <div className="desc">
-                        <h1>I am <br />a Designer</h1>
-                        <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
-                        <p><a className="btn btn-primary btn-learn">View Portfolio <em className="icon-briefcase3" /></a></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </li>
-            </ul>
+    <BrowserRouter>
+    <div className="App">
+
+        {/* Routes */}
+        <Route exact path="/component" component={Projects} />
+        <Route path="/component/articles" component={Articles} />
+        <Route path="/component/about" component={About} />
+
+        <div className="navigation">
+            {/* <img src={logo} className="logo" alt="Logo" /> */}
+            <div className="navigation-sub">
+                <Link to="/component" className="item">Projects</Link>
+                <Link to="/component/articles" className="item">Articles</Link>
+                <Link to="/component/about" className="item">About</Link>
+                {/* <Projects></Projects>
+                <Articles></Articles>
+                <About></About> */}
+            </div>
         </div>
-    </section>
-  </div>
+    </div>
+    </BrowserRouter>
   );
 }
 

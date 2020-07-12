@@ -1,6 +1,6 @@
 # Yo
 
-This is a little portfolio website I build when I was bored, it has most definitely has not been updated in a while so email me here for info:
+This is a little portfolio website I built when I was bored, it has most definitely has not been updated in a while so email me here for info:
 
 ### aj@virpietech.com
 

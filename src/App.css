@@ -1,10 +1,97 @@
-.App {
-  text-align: center;
+@import-normalize; /* bring in normalize.css styles */
+/* rest of app styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Css properties that will be applied to elements in all sections*/
+
+.overflow-wrap {
+  overflow-x: hidden !important;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
+section:nth-of-type(1) {
+  color: #fff;
+  height: calc(100vh + 50px);
+  padding: 0 10px;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px){
+  section {
+    line-height: 18px;
+    padding: 100px 0px 130px 0px;
+  }
+}
+
+/* Intro Section Css properties */
+
+.background {
+  background-color: #CC74FF;
+  opacity: .6;  
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.intro-content {
+  z-index: 1;
+  color: white;
+  font-size: 60;
+}
+
+.MePic {
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+  align-content: center;
+}
+
+/* About Section Css properties */
+
+.textblock {
+  float: left;
+  width: 40vw;
+  margin: 30px;
+}
+
+.skills-table {
+  float: right;
+  width: 40vw;
+  margin: 30px;
+  font-size: 15px;
+}
+
+.skills-table thead{
+  font-weight: bold;
+  padding: 15px;
+  background-color: gray;
+  border: indianred 2px;
+  padding: 5px;
+}
+
+.skills-table > td{
+  
+}
+
+/* Projects Section Css properties */
+/* Component specific Css properties */
+
+.App-logo {    
   height: 40vmin;
-  pointer-events: none;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  vertical-align: middle;
+  align-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,6 +115,32 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  background:#1B1C1D;
+  color: white;
+  overflow-x: hidden;
+  flex: 1;
+  align-items: center;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  margin-left: 350px;
+  min-width: 500px;
 }
 
 @keyframes App-logo-spin {

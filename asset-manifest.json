@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/athammana.github.io/static/css/main.11bf6690.chunk.css",
-    "main.js": "/athammana.github.io/static/js/main.d634787f.chunk.js",
-    "main.js.map": "/athammana.github.io/static/js/main.d634787f.chunk.js.map",
-    "runtime-main.js": "/athammana.github.io/static/js/runtime-main.07f78f13.js",
-    "runtime-main.js.map": "/athammana.github.io/static/js/runtime-main.07f78f13.js.map",
-    "static/js/2.e9168533.chunk.js": "/athammana.github.io/static/js/2.e9168533.chunk.js",
-    "static/js/2.e9168533.chunk.js.map": "/athammana.github.io/static/js/2.e9168533.chunk.js.map",
-    "index.html": "/athammana.github.io/index.html",
-    "precache-manifest.0b1015d6ffb53e600a50d684ef8f47d2.js": "/athammana.github.io/precache-manifest.0b1015d6ffb53e600a50d684ef8f47d2.js",
-    "service-worker.js": "/athammana.github.io/service-worker.js",
-    "static/css/main.11bf6690.chunk.css.map": "/athammana.github.io/static/css/main.11bf6690.chunk.css.map",
-    "static/js/2.e9168533.chunk.js.LICENSE.txt": "/athammana.github.io/static/js/2.e9168533.chunk.js.LICENSE.txt",
-    "static/media/Twitter_Logo_Blue.svg": "/athammana.github.io/static/media/Twitter_Logo_Blue.a7a925c7.svg",
-    "static/media/logo.svg": "/athammana.github.io/static/media/logo.5d5d9eef.svg"
+    "main.css": "/portfolio/static/css/main.76c4594d.chunk.css",
+    "main.js": "/portfolio/static/js/main.4a013331.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4a013331.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.9862d705.chunk.js": "/portfolio/static/js/2.9862d705.chunk.js",
+    "static/js/2.9862d705.chunk.js.map": "/portfolio/static/js/2.9862d705.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.a6d74f1333d279f8f2dfd2de84c446cc.js": "/portfolio/precache-manifest.a6d74f1333d279f8f2dfd2de84c446cc.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.76c4594d.chunk.css.map": "/portfolio/static/css/main.76c4594d.chunk.css.map",
+    "static/js/2.9862d705.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9862d705.chunk.js.LICENSE.txt",
+    "static/media/BoozPic.png": "/portfolio/static/media/BoozPic.00478779.png",
+    "static/media/Twitter_Logo_Blue.svg": "/portfolio/static/media/Twitter_Logo_Blue.a7a925c7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.07f78f13.js",
-    "static/js/2.e9168533.chunk.js",
-    "static/css/main.11bf6690.chunk.css",
-    "static/js/main.d634787f.chunk.js"
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.9862d705.chunk.js",
+    "static/css/main.76c4594d.chunk.css",
+    "static/js/main.4a013331.chunk.js"
   ]
 }

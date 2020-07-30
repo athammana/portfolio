@@ -11,8 +11,7 @@
 }
 
 section {
-  height: calc(100vh + 50px);
-  padding: 0 10px;
+  height: calc(100vh);
 }
 
 .flex {
@@ -25,7 +24,7 @@ section {
 @media screen and (min-width: 600px){
   section {
     line-height: 18px;
-    padding: 100px 0px 130px 0px;
+    /* padding: 100px 0px 130px 0px; */
   }
 }
 
@@ -34,21 +33,38 @@ section {
 .header {
   position: fixed;
   width: 100vw;
-  top: 1vw;
-  right: 2vw;
   text-align: right;
+  transition: 0.25s;
+  z-index: 2;
+  color: black;
+}
+
+.header ul li {
+  font-size: 1.25rem;
+  display: inline;
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.navitem > .active {
+  border-bottom: 2px solid white;
+}
+
+.scrolled {
+  display: block;
+  position: fixed;
+  color: white;
+  background-color: #9844cb;
 }
 
 /* Intro Section Css properties */
 
-.background {
+.intro-background {
   background-color: #CC74FF;
   opacity: .6;  
-  height: 100%;
-  top: 0;
-  left: 0;
+  height: 100vh;
+  width: 100vw;
   position: absolute;
-  width: 100%;
 }
 
 .intro-content {
@@ -65,6 +81,14 @@ section {
 }
 
 /* About Section Css properties */
+
+.about-background {
+  background-color: #008ba3;
+  opacity: .6;  
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
 
 .left-card {
   width: 40vw;

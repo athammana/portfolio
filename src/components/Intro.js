@@ -6,7 +6,7 @@ class Intro extends React.Component{
     render(){
         return (
             <section id='intro' className='flex height-fix'>
-                <div id='introbg' className='background'></div>
+                <div id='introbg' className='intro-background'></div>
                 <div className='intro-content flex'>  
                     <img src={MePic} className="MePic" alt="Me" />
                     <h1>Yo</h1>

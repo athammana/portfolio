@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from './ProjectCard';
-import { Container, Row, Col } from 'react-grid-system';
 
 class Projects extends React.Component {
 

@@ -1,21 +1,28 @@
 import React from 'react';
-import './App.css';
+// import ReactDOM from 'react-dom';
 import Projects from './components/Projects';
 import About from './components/About';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
+import './App.css';
+// import { Button } from 'react-scroll';
 
-function App() {
-  return (
-      <div>
-        <Navbar />
-        <div className="overflow-wrap">
-          <Intro />
-          <About />
-          <Projects />
+class App extends React.Component {
+  
+
+
+  render() {
+    return (
+        <div>
+          <Navbar />
+          <div className="overflow-wrap">
+            <Intro />
+            <About />
+            <Projects />
+          </div>
         </div>
-      </div>
-  );
+    );
+  }
 }
 
 export default App;

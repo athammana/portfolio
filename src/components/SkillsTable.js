@@ -1,33 +1,37 @@
 import React from "react"
 import ProgressBar from './ProgressBar';
  
-function SkillsTable(props) {
+class SkillsTable extends React.Component {
+  render() {
     return (
-        <div id='skills-table'>
-            <span>Javascript</span> <ProgressBar bgcolor='purple' completed='100' /> <br />
-            <span>Python</span> <ProgressBar bgcolor='teal' completed='75' /> <br />
-            <span>Java</span> <ProgressBar bgcolor='yellow' completed='60' /> <br />
-            <span>C#</span> <ProgressBar bgcolor='brown' completed='50' /> <br />
-            <span>C++</span> <ProgressBar bgcolor='gold' completed='25' /> <br />
+        <div id='skills-table' className='skills-table'>
+          <table>
+            <tbody>
+              <tr>
+                <td className='skill-name'> <span>Javascript</span> </td>
+                <td><ProgressBar bgcolor='Lime' completed='100' /></td>
+              </tr>
+              <tr>
+                <td className='skill-name'> <span>Python</span> </td>
+                <td><ProgressBar bgcolor='HoneyDew' completed='75' /></td>
+              </tr>
+              <tr>
+                <td className='skill-name'> <span>Java</span> </td>
+                <td><ProgressBar bgcolor='Coral' completed='60' /></td>
+              </tr>
+              <tr>
+                <td className='skill-name'> <span>C#</span> </td>
+                <td><ProgressBar bgcolor='Chartreuse' completed='50' /></td>
+              </tr>
+              <tr>
+                <td className='skill-name'> <span>C++</span> </td>
+                <td><ProgressBar bgcolor='PeachPuff' completed='25' /></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
     );
+  }
 }
 
 export default SkillsTable;
-
-//Old table
-            /* <table className='skills-table'>
-              <thead>
-                <tr>
-                  <th>Language</th>
-                  <th>Interest</th>
-                  <th>Experience</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>Javascript</td><td>10</td><td>10</td></tr>
-                <tr><td>Python</td><td>8</td><td>7</td></tr>
-                <tr><td>Java</td><td>6</td><td>10</td></tr>
-                <tr><td>C#</td><td>4</td><td>9</td></tr>
-              </tbody>
-            </table> */

@@ -96,7 +96,6 @@ section {
 }
 
 .card {
-  margin-top: 10vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   transition: 0.3s;
 }
@@ -106,17 +105,22 @@ section {
 }
 
 .left-card {
+  height: 60vh;
   width: 40vw;
   float: left;
   margin-left: 4vw;
+  margin-top: 10vh;
+  padding-top: 3vh;
   background-color: white;
 }
 
 .right-card {
+  height: 60vh;
   width: 40vw;
   float: right;
-  margin-top: 30vh;
+  margin-top: 15vh;
   margin-right: 4vw;
+  padding-top: 3vh;
   background-color: white;
 }
 
@@ -135,24 +139,28 @@ section {
 .fillerStyles {
   height: 100%;
   border-radius: inherit;
-  text-align: right;
   transition: width 1s ease-in-out;
 }
 
 .labelStyles {
-  padding: 5px;
-  color: white;
+  padding: 5px 0px;
+  color: black;
   font-weight: bold;
   border-radius: inherit;
   display: block;
 }
-/* .skills-table {
-  font-size: 15px;
+ 
+.skills-table table {
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   border-collapse: collapse;
 }
 
+.skill-name {
+  width: 20%;
+}
+/*
 .skills-table > thead{
   font-weight: bold;
   padding: 15px;
@@ -169,6 +177,7 @@ section {
 } */
 
 /* Projects Section Css properties */
+
 .projects-background {
   background-color: #ffa5ff;
   opacity: .6;  
@@ -176,6 +185,64 @@ section {
   width: 100%;
   position: absolute;
   z-index: -1;
+}
+
+.project-cards {
+  height: 100vh;
+  width: 100vw;
+}
+
+.project-cards-table {
+  width: 100vw;
+}
+
+table.project-cards td {
+  margin: 0 !important;
+  padding: 0px !important;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.project-container {
+  position: relative;
+  height: 35vh;
+  width: 30vh;
+  background-color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin: 2vh auto;
+}
+
+.projimg {
+  position: absolute;
+  height: 10vh;
+  top: 35%;
+  left: 33%;
+  z-index: 1;
+  transition: opacity 1s;
+}
+
+
+.projimg-text {
+  position: absolute;
+  color: black;
+  height: 17vh;
+  width: 16vw;
+  top: 30%;
+  left: 13%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.projimg:hover {
+  opacity: 0;
+}
+.projimg:hover + .projimg-text {
+  opacity: 1;
 }
 
 /* Component specific Css properties */

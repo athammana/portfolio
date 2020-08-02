@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 class ProgressBar extends React.Component {
 
@@ -40,7 +40,6 @@ class ProgressBar extends React.Component {
         return (
             <div className='containerStyles'>
                 <div className='fillerStyles'>
-                    {console.log(`${this.props.completed}%`)}
                     <span id={this.props.barNum} className='labelStyles' style={{width:`${this.state.progress}%`, backgroundColor: this.props.bgcolor}}>{`${this.state.progress}%`}</span>
                 </div>
             </div>

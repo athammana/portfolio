@@ -1,6 +1,6 @@
 # Yo
 
-This is a little portfolio website I built when I was bored, it has most definitely has not been updated in a while so email me here for info:
+Site is under development, I apologize in advance
 
 ### aj@virpietech.com
 

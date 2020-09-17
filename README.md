@@ -6,4 +6,4 @@ This is a little portfolio website I built when I was bored, it has most definit
 
 Also here's the website if you wanna see
 
-### athammana.github.io/portfolio
+### [athammana.github.io/portfolio](https://athammana.github.io/portfolio/)

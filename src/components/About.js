@@ -30,7 +30,7 @@ class About extends React.Component{
         <div id='aboutbg' className='about-background'/>
         <div className='about-content'>
           <div className='left-card card container'>
-            <h1 style={{textAlign: 'center'}}>
+            {/* <h1 style={{textAlign: 'center'}}>
               Experience
             </h1>
             <h3 style={{textAlign: 'center'}}>
@@ -45,17 +45,26 @@ class About extends React.Component{
               labelPosition={65}
               data={this.state.pieData}
             />
-            {/* <Button style={{position:'fixed', cursor:'pointer', bottom:'5vh', right:'5vh', width:'40px', height:'40px', backgroundColor:'blue', borderRadius:'50%', border: '0px'}} onClick={this.break}/> */}
-
-          </div>
-          <div className=' right-card card container'>
+            <Button style={{position:'fixed', cursor:'pointer', bottom:'5vh', right:'5vh', width:'40px', height:'40px', backgroundColor:'blue', borderRadius:'50%', border: '0px'}} onClick={this.break}/> */}
             <h1 style={{textAlign: 'center'}}>
-              Interest
+              Experience
             </h1>
             <h3 style={{textAlign: 'center', marginBottom:'5vh'}}>
-              What I'd like to do
+              What I've done
             </h3>
             <SkillsTable />
+          </div>
+          <div className='right-card card container'>
+            <h1 style={{textAlign: 'center'}}>
+              About Me
+            </h1>
+            <h4 style={{margin:'2vh', fontWeight: '100', lineHeight: '1.5'}}>
+              Hi There! I'm a software engineer who would love to transform all of my fanatic ideas into reality.
+              I am currently on track to graduate in May 2021, and would love to work at your company! I only
+              have a couple internships worth of experience, but I have years of problem solving experience! Most
+              of my experience is in languages like Javascript, and Full Stack Development, but I'm very motivated
+              to learn more.
+            </h4>
           </div>
         </div>
       </section>

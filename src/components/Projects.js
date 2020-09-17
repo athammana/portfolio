@@ -14,7 +14,15 @@ class Projects extends React.Component {
           <div id='projectsbg' className='projects-background'/>
           <div className='project-cards'>
             <h1 style={{textAlign:'center', margin:'0px 0px 3vh'}}>Projects</h1>
-            <table className='project-cards-table'>
+            <div className='project-card-grid'>
+              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
+              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
+              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
+              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
+              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
+            </div>
+            
+            {/* <table className='project-cards-table'>
               <tbody>
                 <tr>
                   <td><ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/></td>
@@ -27,7 +35,7 @@ class Projects extends React.Component {
                   <td><ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/></td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
           </div>
         </section>
       )    

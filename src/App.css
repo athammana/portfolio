@@ -105,7 +105,7 @@ section {
 }
 
 .left-card {
-  height: 60vh;
+  height: 70vh;
   width: 40vw;
   float: left;
   margin-left: 4vw;
@@ -115,7 +115,7 @@ section {
 }
 
 .right-card {
-  height: 60vh;
+  height: 70vh;
   width: 40vw;
   float: right;
   margin-top: 15vh;
@@ -192,6 +192,11 @@ section {
   width: 100vw;
 }
 
+.project-card-grid {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
 .project-cards-table {
   width: 100vw;
 }
@@ -208,7 +213,7 @@ table.project-cards td {
 .project-container {
   position: relative;
   height: 35vh;
-  width: 30vh;
+  width: 25vw;
   background-color: white;
   text-align: center;
   font-size: 1.25rem;
@@ -219,8 +224,8 @@ table.project-cards td {
 .projimg {
   position: absolute;
   height: 10vh;
-  top: 35%;
-  left: 33%;
+  justify-content: center;
+  align-content: center;
   z-index: 1;
   transition: opacity 1s;
 }

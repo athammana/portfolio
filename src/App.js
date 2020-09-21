@@ -1,5 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
+import Contact from './components/Contact';
 import Projects from './components/Projects';
 import About from './components/About';
 import Intro from './components/Intro';
@@ -19,6 +20,7 @@ class App extends React.Component {
             <Intro />
             <About />
             <Projects />
+            <Contact />
           </div>
         </div>
     );

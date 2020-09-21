@@ -56,6 +56,17 @@ class Navbar extends React.Component{
                             Projects
                         </Link>
                     </li>
+                    <li className='navitem'>
+                        <Link 
+                            activeClass='active' 
+                            to='contact' 
+                            spy={true} 
+                            smooth={true} 
+                            offset={-70} 
+                            duration={500}>
+                            Contact Me
+                        </Link>
+                    </li>
                 </ul>
             </div>
         );

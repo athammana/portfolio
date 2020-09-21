@@ -58,7 +58,7 @@ class About extends React.Component{
             <h1 style={{textAlign: 'center'}}>
               About Me
             </h1>
-            <h4 style={{margin:'2vh', fontWeight: '100', lineHeight: '1.5'}}>
+            <h4 className='about-desc' style={{margin:'2vh', fontWeight: '100', lineHeight: '1.5'}}>
               Hi There! I'm a software engineer who would love to transform all of my fanatic ideas into reality.
               I am currently on track to graduate in May 2021, and would love to work at your company! I only
               have a couple internships worth of experience, but I have years of problem solving experience! Most

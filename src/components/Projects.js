@@ -13,13 +13,13 @@ class Projects extends React.Component {
         <section id='projects' style={{position:'relative'}}>
           <div id='projectsbg' className='projects-background'/>
           <div className='project-cards'>
-            <h1 style={{textAlign:'center', margin:'0px 0px 3vh'}}>Projects</h1>
+            <h1 style={{textAlign:'center', margin:'0px 0px 3vh', paddingTop:'1ch'}}>Projects</h1>
             <div className='project-card-grid'>
-              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
-              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
-              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
-              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
-              <ProjectCard name='Project1' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour'/>
+              <ProjectCard name='DocTour' src= {require('./ProjectImgs/DocTour.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour' text='I will sacrifice my life for Pakistan'/>
+              <ProjectCard name='New Zealand IQP' src= {require('./ProjectImgs/kiwi.png')} projlink='https://digitalcommons.wpi.edu/iqp-all/5615/' text='I will sacrifice my life for Pakistan'/>
+              <ProjectCard name='Sailbot MQP' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/CS3733-D20-Team-K/DocTour' text='I will sacrifice my life for Pakistan'/>
+              <ProjectCard name='Neural Net' src= {require('./ProjectImgs/ocr.jpg')} projlink='https://github.com/athammana/neuralNet' text='I will sacrifice my life for Pakistan'/>
+              <ProjectCard name='Routine App' src= {require('./ProjectImgs/ppp.png')} projlink='https://github.com/athammana/WPIHack2019/' text='I will sacrifice my life for Pakistan'/>
             </div>
             
             {/* <table className='project-cards-table'>

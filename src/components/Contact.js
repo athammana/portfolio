@@ -21,8 +21,7 @@ class Contact extends React.Component{
             method: 'POST',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify(data)})
-        .then(response => response.json())
-        .then((data) => { })
+        .then(response => response.json((out) => console.log('EmailJS Response:', out)))
         .catch((error) => {
             console.log(error);
         });

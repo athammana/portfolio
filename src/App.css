@@ -57,6 +57,18 @@ section {
   background-color: #9844cb;
 }
 
+.hamburger {
+  float: right;
+  margin: 10px;
+}
+
+.navbox {
+  display: flex;
+  /* flex-direction: ; */
+  height: 30vh;
+  min-width: 10vw;;
+}
+
 /* Intro Section Css properties */
 
 .intro-background {
@@ -259,14 +271,14 @@ section {
   z-index: 1;
   color: black;
   font-size: 60;
-  width: 50vw;
+  /* width: 50vw; */
 }
 
 .contact-form {
   width: inherit;
 }
 
-.contact-field {
+/* .contact-field {
   display: block;
   width: inherit;
   font-family: inherit;
@@ -290,7 +302,7 @@ section {
   margin: 5px 0 0 0;
   outline: 0;
   padding: 10px 30px;
-}
+} */
 
 /* Component specific Css properties */
 

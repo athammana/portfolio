@@ -1,73 +1,62 @@
 import React from "react";
-import { Link } from "react-scroll";
+import MediaQuery from 'react-responsive';
+import HamburgerMenu from 'react-hamburger-menu';
+import NavbarLinks from './NavbarLinks';
 
 class Navbar extends React.Component{
 
+    constructor(props){
+        super(props);
+        this.state = {
+            open: false
+        }
+    }
+
+    scrollFunc(){
+        const isTop = window.scrollY > 100;
+        const nav = document.getElementById('navbar');
+        if (isTop) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    }
+
     componentDidMount(){
-        window.addEventListener('scroll', () =>{
-            const isTop = window.scrollY > 100;
-            const nav = document.getElementById('navbar');
-            if(isTop){
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
+        window.addEventListener('scroll', this.scrollFunc);
     }
 
     componentWillUnmount(){
-        window.removeEventListener('scroll');
+        window.removeEventListener('scroll', this.scrollFunc);
+    }
+
+    handleClick(){
+        this.setState({
+            open: !this.state.open
+        });
     }
 
     render(){
         return (
             <div id='navbar' className='header'>
-                <ul className='navlist'>
-                    <li className='navitem'>
-                        <Link
-                            activeClass='active'
-                            to='intro'
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration= {500}>
-                            Intro
-                        </Link>
-                    </li>
-                    <li className='navitem'>
-                        <Link 
-                            activeClass='active' 
-                            to='about' 
-                            spy={true} 
-                            smooth={true} 
-                            offset={-70} 
-                            duration={500}>
-                            About
-                        </Link>
-                    </li>
-                    <li className='navitem'>
-                        <Link 
-                            activeClass='active' 
-                            to='projects' 
-                            spy={true} 
-                            smooth={true} 
-                            offset={-70} 
-                            duration={500}>
-                            Projects
-                        </Link>
-                    </li>
-                    <li className='navitem'>
-                        <Link 
-                            activeClass='active' 
-                            to='contact' 
-                            spy={true} 
-                            smooth={true} 
-                            offset={-70} 
-                            duration={500}>
-                            Contact Me
-                        </Link>
-                    </li>
-                </ul>
+                <MediaQuery minDeviceWidth={768}>
+                    <NavbarLinks listClass='navlist'/>
+                </MediaQuery>
+                <MediaQuery maxDeviceWidth={768 - 1}>
+                    <HamburgerMenu 
+                        className='hamburger'
+                        isOpen={this.state.open}
+                        menuClicked={this.handleClick.bind(this)}
+                        width={18}
+                        height={15}
+                        strokeWidth={1}
+                        rotate={0}
+                        color='black'
+                        borderRadius={0}
+                        animationDuration={0.5}
+                    />
+                    <div className='navbox'><NavbarLinks /></div>
+                </MediaQuery>
             </div>
         );
     }

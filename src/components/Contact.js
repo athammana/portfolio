@@ -1,4 +1,7 @@
 import React from "react";
+import 'materialize-css';
+import { Textarea, TextInput, Button, Icon, Row, Col } from "react-materialize";
+import { Container, Grid } from "@material-ui/core";
 
 
 class Contact extends React.Component{
@@ -31,16 +34,15 @@ class Contact extends React.Component{
         return (
             <section id='contact' className='flex height-fix'>
                 <div id='contact-bg' className='contact-background'></div>
-                <div className='contact-content'> 
-                    <h1 style={{textAlign:'center', margin:'0px 0px 3vh', paddingTop:'1ch'}}>Contact Me</h1>
-                    <form className='flex contact-form' onSubmit={this.handleSubmit}>
-                        <input type='text' className='contact-field' name='name' placeholder='Name'></input>
-                        <input type='text' className='contact-field' name='email' placeholder='Your Email'></input>
-                        <textarea type='text' className='contact-field contact-textarea' name='message' placeholder='Your Message'></textarea>
-                        <button className='contact-submit'>Submit</button>
-                    </form>
-
-                </div>
+                <Grid Container justify='center' align='center'>
+                        <h1 style={{textAlign:'center', margin:'0px 0px 3vh', paddingTop:'1ch'}}>Contact Me</h1>
+                        <form onSubmit={this.handleSubmit}>
+                            <Grid item><TextInput type='text' name='name' placeholder='Name'></TextInput></Grid>
+                            <Grid item><TextInput type='text' name='email' placeholder='Your Email'></TextInput></Grid>
+                            <Grid item><Textarea type='text' name='message' placeholder='Your Message'></Textarea></Grid>
+                            <Grid item><Button node="button" type="submit" waves="light">Submit<Icon right>send</Icon></Button></Grid>
+                        </form>
+                </Grid>
             </section>
         );
     }

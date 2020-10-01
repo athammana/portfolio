@@ -6,6 +6,7 @@ import About from './components/About';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
 import './App.css';
+import 'materialize-css/dist/css/materialize.min.css';
 // import { Button } from 'react-scroll';
 
 class App extends React.Component {

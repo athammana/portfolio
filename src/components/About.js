@@ -1,13 +1,26 @@
 import React from "react";
 import SkillsTable from './SkillsTable';
-import {Grid, Typography, Paper} from '@material-ui/core'
+import { Grid, Typography, Paper } from '@material-ui/core'
+import { withStyles } from '@material-ui/core/styles';
 // import { Button } from 'react-scroll';
 // import ReactDOM from 'react-dom';
- 
-class About extends React.Component{
+import GridBase from "@material-ui/core/Grid";
 
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing.unit * 2,
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+});
+class About extends React.Component{
+  
   constructor(props) {
     super(props);
+    
     
     this.state = {  
       pieData: [
@@ -20,6 +33,8 @@ class About extends React.Component{
     };
   }
   
+
+  
   // break() {
   //   console.log(ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(SkillsTable)));
   // }
@@ -29,9 +44,9 @@ class About extends React.Component{
       <section id='about'>
         <div id='aboutbg' className='about-background'/>
         {/* <div className='about-content'> */}
-        <Grid container spacing={2}>
+        <Grid container direction='row' justify='space-around' alignItems="center" spacing={2}>
           <Grid item s={12} m={4}>
-            <Paper elevation={3}>
+            <Paper style={{ height: '80vh', width: '40vw', padding: '10px' }} elevation={3}>
             <Typography variant='h2'>
               Experience
             </Typography>
@@ -41,9 +56,9 @@ class About extends React.Component{
             <SkillsTable />
           </Paper>
           </ Grid>
-          <Grid item s={12} m={4} l={4} xl={4}>
+          <Grid item s={6}>
           {/* <div className='right-card card container'> */}
-          <Paper elevation={3}>
+            <Paper style={{ height: '70vh', width: '40vw', padding: '10px' }} elevation={3}>
             {/* <h1 style={{textAlign: 'center'}}> */}
                 <Typography variant='h2'>About Me</Typography>
               

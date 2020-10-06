@@ -40,7 +40,7 @@ class Contact extends React.Component{
                         <button className='contact-submit'>Submit</button>
                     </form>
                 </div>
-                <div id='contact-urls'></div>
+                <div id='contact-url'></div>
             </section>
         );
     }

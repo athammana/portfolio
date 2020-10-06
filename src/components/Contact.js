@@ -39,8 +39,8 @@ class Contact extends React.Component{
                         <textarea type='text' className='contact-field contact-textarea' name='message' placeholder='Your Message'></textarea>
                         <button className='contact-submit'>Submit</button>
                     </form>
-
                 </div>
+                <div id='contact-urls'></div>
             </section>
         );
     }

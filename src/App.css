@@ -4,6 +4,8 @@
 
 /* Css properties that will be applied to elements in all sections*/
 
+@media screen { html,body {min-width:1000px;min-height: 620px;} }
+
 .overflow-wrap {
   overflow-x: hidden !important;
   font-size: 20px;
@@ -212,6 +214,7 @@ section {
   font-size: 1.25rem;
   cursor: pointer;
   margin: 2vh auto;
+  
 }
 
 .projimg {

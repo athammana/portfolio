@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f0293b4c.chunk.css",
-    "main.js": "/portfolio/static/js/main.1aa73b02.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1aa73b02.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.233d40ed.chunk.css",
+    "main.js": "/portfolio/static/js/main.a4e6316a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a4e6316a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.ab506112.chunk.js": "/portfolio/static/js/2.ab506112.chunk.js",
-    "static/js/2.ab506112.chunk.js.map": "/portfolio/static/js/2.ab506112.chunk.js.map",
+    "static/js/2.9c545f48.chunk.js": "/portfolio/static/js/2.9c545f48.chunk.js",
+    "static/js/2.9c545f48.chunk.js.map": "/portfolio/static/js/2.9c545f48.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.c39552e8c17c5968f461f411c0b01eed.js": "/portfolio/precache-manifest.c39552e8c17c5968f461f411c0b01eed.js",
+    "precache-manifest.3e3bcf6b441c2256b3c3947b194f23df.js": "/portfolio/precache-manifest.3e3bcf6b441c2256b3c3947b194f23df.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.f0293b4c.chunk.css.map": "/portfolio/static/css/main.f0293b4c.chunk.css.map",
-    "static/js/2.ab506112.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ab506112.chunk.js.LICENSE.txt",
+    "static/css/main.233d40ed.chunk.css.map": "/portfolio/static/css/main.233d40ed.chunk.css.map",
+    "static/js/2.9c545f48.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9c545f48.chunk.js.LICENSE.txt",
     "static/media/BoozPic.png": "/portfolio/static/media/BoozPic.00478779.png",
+    "static/media/Chess.png": "/portfolio/static/media/Chess.7d9cea4e.png",
     "static/media/DocTour.png": "/portfolio/static/media/DocTour.87b3ae8f.png",
+    "static/media/RainingCows.png": "/portfolio/static/media/RainingCows.a46b5d5b.png",
     "static/media/SailbotCropped.png": "/portfolio/static/media/SailbotCropped.2417dc2b.png",
-    "static/media/kiwi.png": "/portfolio/static/media/kiwi.86fc0a44.png",
-    "static/media/ocr.jpg": "/portfolio/static/media/ocr.7abbfa31.jpg"
+    "static/media/Unscramble.png": "/portfolio/static/media/Unscramble.63a7cf4e.png",
+    "static/media/kiwi.png": "/portfolio/static/media/kiwi.86fc0a44.png"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.ab506112.chunk.js",
-    "static/css/main.f0293b4c.chunk.css",
-    "static/js/main.1aa73b02.chunk.js"
+    "static/js/2.9c545f48.chunk.js",
+    "static/css/main.233d40ed.chunk.css",
+    "static/js/main.a4e6316a.chunk.js"
   ]
 }

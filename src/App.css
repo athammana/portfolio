@@ -214,7 +214,7 @@ section {
   font-size: 1.25rem;
   cursor: pointer;
   margin: 2vh auto;
-  padding: 15px;
+  padding: 10px;
 }
 
 .projimg {
@@ -234,7 +234,7 @@ section {
 .projimg-text {
   color: black;
   transform: translate(-50%);
-  font-size: 1.5ch;
+  font-size: 1.25ch;
   opacity: 0;
   transition: opacity .5s;
 
@@ -285,18 +285,73 @@ section {
   min-height: 150px;
 }
 
-.contact-submit {
+/* .contact-submit {
   background: transparent;
-  align-self: flex-end;
   font-size: 12pt;
   margin: 5px 0 0 0;
   outline: 0;
   padding: 10px 30px;
+} */
+
+.contact-icon {
+  height: 100px;
+  z-index: 100;
+  cursor: pointer;
+  margin: 20px;
+  /* background-color: ; */
+}
+/************************* START BORROWED CODE *************************/
+.hide {
+  display: none;
 }
 
+.submit-button {
+  align-self: flex-end;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: "Open Sans", Helvetica, Arial, sans-serif; */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  height: 40px;
+  width: 120px;
+  line-height: 38px;
+  overflow: hidden;
+  background: #ff74a7;
+  border-radius: 3px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.submit-button:hover, .submit-button:focus {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.submit-button.animated {
+  -webkit-animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+          animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.submit-button > span {
+  display: block;
+  color: white;
+  text-align: center;
+}
+.submit-button > span.pre-state-msg {
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition-delay: 0.75s;
+}
+.submit-button.state-1 .pre-state-msg {
+  margin-top: -38px;
+}
+.submit-button.state-2 .pre-state-msg {
+  margin-top: -76px;
+}
+/************************* END BORROWED CODE *************************/
 /* Component specific Css properties */
 
-.App-logo {    
+/* .App-logo {    
   height: 40vmin;
   width: 64px;
   height: 64px;
@@ -342,10 +397,10 @@ section {
   flex: 1;
   align-items: center;
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+  /* scrollbar-width: none;  /* Firefox */
+/*}
 
-.sidebar::-webkit-scrollbar {
+/* .sidebar::-webkit-scrollbar {
   display: none;
 }
 
@@ -361,4 +416,4 @@ section {
   to {
     transform: rotate(360deg);
   }
-}
+} */

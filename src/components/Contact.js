@@ -2,9 +2,10 @@ import React from "react";
 
 
 class Contact extends React.Component{
-
-    handleSubmit(event){
+    
+    handleSubmit(event) {
         event.preventDefault();
+        document.querySelector('.submit-button').classList.add('state-1', 'animated');
         let name = event.target.name.value,
             reply_to = event.target.email.value,
             message = event.target.message.value;
@@ -25,9 +26,19 @@ class Contact extends React.Component{
         .catch((error) => {
             console.log(error);
         });
+        setTimeout(this.finalButtonMsg, 2000);
     }
 
-    render(){
+    finalButtonMsg() {
+        document.querySelector('.submit-button').classList.add('state-2');
+        setTimeout(this.setInitialButtonState, 2000);
+    };
+    
+    setInitialButtonState () {
+        document.querySelector('.submit-button').classList.remove('state-1', 'state-2', 'animated');
+    }
+    
+    render() {
         return (
             <section id='contact' className='flex height-fix'>
                 <div id='contact-bg' className='contact-background'></div>
@@ -37,10 +48,14 @@ class Contact extends React.Component{
                         <input type='text' className='contact-field' name='name' placeholder='Name'></input>
                         <input type='text' className='contact-field' name='email' placeholder='Your Email'></input>
                         <textarea type='text' className='contact-field contact-textarea' name='message' placeholder='Your Message'></textarea>
-                        <button className='contact-submit'>Submit</button>
+                        <button class="submit-button state-0"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
                     </form>
                 </div>
-                <div id='contact-url'></div>
+                <div id='contact-url' style={{ zIndex:1, marginTop: '10px' }}>
+                    <img className='contact-icon' src={require('../ThirdPartyIcons/Github.png')} alt='Contact Icon' onClick={(e) => { e.preventDefault(); window.location.href = 'https://github.com/athammana'; }} />
+                    <img className='contact-icon' src={require('../ThirdPartyIcons/Gmail.png')} alt='Contact Icon' onClick={(e) => { e.preventDefault(); window.location.href = 'https://www.linkedin.com/in/abhijay-thammana/'; }} />
+                    <img className='contact-icon' src={require('../ThirdPartyIcons/Linked.png')} alt='Contact Icon' onClick={(e) => { e.preventDefault(); window.location.href = 'https://www.linkedin.com/in/abhijay-thammana/'; }} />
+                </div>
             </section>
         );
     }

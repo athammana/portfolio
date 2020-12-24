@@ -214,7 +214,7 @@ section {
   font-size: 1.25rem;
   cursor: pointer;
   margin: 2vh auto;
-  
+  padding: 15px;
 }
 
 .projimg {
@@ -234,8 +234,7 @@ section {
 .projimg-text {
   color: black;
   transform: translate(-50%);
-  padding: 20px;
-  font-size: 1ch;
+  font-size: 1.5ch;
   opacity: 0;
   transition: opacity .5s;
 

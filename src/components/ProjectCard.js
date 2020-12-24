@@ -7,7 +7,7 @@ class ProjectCard extends React.Component {
       return (
         <div className='project-container card' onClick= {(e) => {e.preventDefault(); window.location.href=this.props.projlink;}}>
             <h2>{this.props.name}</h2>
-            <img className='projimg' src={this.props.src} alt='Project Icon' />
+            <img className='projimg' src={this.props.src} style={this.props.style} alt='Project Icon' />
             <span className='projimg-text'>{this.props.text}</span>
         </div>
       )    

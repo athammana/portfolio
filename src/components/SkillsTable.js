@@ -18,7 +18,7 @@ class SkillsTable extends React.Component {
               </tr>
               <tr>
                 <td className='skill-name'> <span>Python</span> </td>
-                <td><ProgressBar bgcolor='HoneyDew' completed='75' /></td>
+              <td><ProgressBar bgcolor='DarkTurquoise' completed='75' /></td>
               </tr>
               <tr>
                 <td className='skill-name'> <span>C#</span> </td>
